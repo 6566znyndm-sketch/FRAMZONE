@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MarCom TSU — สื่อสารการตลาด มหาวิทยาลัยทักษิณ</title>
+<meta name="description" content="MarCom TSU — วิชาเอกสื่อสารการตลาด มหาวิทยาลัยทักษิณ">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Inter:wght@500;600;700;800&display=swap');
+:root{--blue:#003b73;--blue2:#0879c9;--cyan:#7ed8ff;--ink:#07111f;--muted:#637083;--bg:#f7faff;--card:#fff;--line:#e6edf5;--max:1240px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"IBM Plex Sans Thai",sans-serif;background:var(--bg);overflow-x:hidden}
+a{text-decoration:none;color:inherit}.nav{height:72px;position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:0 4vw;background:rgba(255,255,255,.76);backdrop-filter:blur(22px);border-bottom:1px solid rgba(0,59,115,.08)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--blue)}.logoMark{width:42px;height:42px;border-radius:13px;background:linear-gradient(145deg,#003b73,#129be3);display:grid;place-items:center;color:#fff;font-family:Inter;font-size:12px;box-shadow:0 8px 25px #003b7330}
+.navlinks{display:flex;gap:25px;font-size:14px;color:#344054}.navlinks a:hover{color:var(--blue2)}
+.menu{display:none;border:0;background:#eef5fb;border-radius:12px;padding:10px 13px}
+.hero{min-height:100svh;padding:130px 5vw 70px;display:grid;place-items:center;position:relative;background:radial-gradient(circle at 78% 24%,#c9efff 0,transparent 27%),linear-gradient(180deg,#fff 0%,#f2f8ff 100%)}
+.hero:after{content:"";position:absolute;width:680px;height:680px;border:1px solid #8fdcff66;border-radius:50%;right:-250px;bottom:-280px}
+.wrap{width:min(var(--max),100%);margin:auto}.heroGrid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#e8f6ff;color:var(--blue);border:1px solid #cbeaff;border-radius:999px;padding:8px 14px;font-size:13px;font-weight:700}
+h1{font-family:Inter,"IBM Plex Sans Thai",sans-serif;font-size:clamp(55px,8vw,108px);line-height:.9;letter-spacing:-.07em;margin:22px 0}.grad{background:linear-gradient(100deg,#003b73,#0798e7);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:19px;line-height:1.75;color:#536174;max-width:650px}.buttons{display:flex;gap:12px;margin-top:30px}.btn{padding:13px 20px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;gap:8px}.primary{background:var(--blue);color:#fff;box-shadow:0 15px 35px #003b7330}.light{background:#fff;border:1px solid var(--line)}
+.visual{height:600px;border-radius:40px;background:linear-gradient(145deg,#eaf8ff,#cfeeff);position:relative;overflow:hidden;box-shadow:0 35px 90px #003b731b;border:1px solid #fff}
+.orbit{position:absolute;border:1px solid #46bdf777;border-radius:50%}.o1{width:520px;height:520px;right:-100px;top:-60px}.o2{width:350px;height:350px;right:35px;top:25px}.o3{width:230px;height:230px;right:95px;top:85px}
+.floatCard{position:absolute;background:#fff;border-radius:28px;box-shadow:0 25px 70px #003b7328}.mainCard{left:50px;top:80px;width:400px;height:430px;padding:34px;transform:rotate(-4deg)}.mainCard .mini{font:700 12px Inter;color:#66819a;letter-spacing:.12em}.mainCard h2{font:800 74px/ .84 Inter;color:var(--blue);letter-spacing:-.07em;margin:24px 0}.mainCard .bottom{position:absolute;left:34px;right:34px;bottom:32px;padding-top:18px;border-top:1px solid var(--line);font-weight:700;color:#4b5b6d}.smallCard{right:30px;bottom:45px;padding:20px 22px;color:#fff;background:linear-gradient(135deg,#003b73,#0b86d5);font-weight:800}.spark{position:absolute;width:12px;height:12px;background:#fff;border-radius:50%;box-shadow:0 0 0 8px #fff4}.s1{right:105px;top:135px}.s2{left:90px;bottom:115px}
+section{padding:125px 5vw}.head{display:flex;justify-content:space-between;gap:35px;align-items:end;margin-bottom:48px}.eyebrow{font:800 12px Inter;color:var(--blue2);letter-spacing:.1em;text-transform:uppercase}.head h2{font:700 clamp(38px,5vw,66px);line-height:1;margin:10px 0 0;letter-spacing:-.05em}.head p{max-width:500px;color:var(--muted);line-height:1.8}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:30px;min-height:245px;transition:.5s cubic-bezier(.2,.8,.2,1);box-shadow:0 10px 35px #003b7307}.card:hover{transform:translateY(-10px);box-shadow:0 28px 70px #003b7315}.num{font:800 12px Inter;color:var(--blue2)}.card h3{font-size:24px;margin:35px 0 10px}.card p{color:var(--muted);line-height:1.75;margin:0}
+.blue{background:#003b73;color:#fff}.blue .head p{color:#c5d8e9}.blue .eyebrow{color:#80d7ff}.blue .card{background:#06477f;border-color:#ffffff18}.blue .card p{color:#c7d9e9}.blue .card h3{color:#fff}
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.numBox{border:1px solid #ffffff1e;border-radius:24px;padding:25px;background:#ffffff0b}.numBox b{display:block;font:800 44px Inter}.numBox span{color:#bdd1e3}
+.newsArea{background:#f1f6fb}.newsGrid{display:grid;grid-template-columns:1.3fr .7fr;gap:18px}.feature{min-height:470px;border-radius:32px;padding:36px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(145deg,#e5f6ff,#c8eaff);overflow:hidden;position:relative}.feature:before{content:"MARCOM";position:absolute;font:800 130px Inter;color:#fff6;right:-40px;top:35px;transform:rotate(-15deg)}.feature>*{position:relative}.date{font:700 12px Inter;color:var(--blue2)}.feature h3{font-size:43px;line-height:1.05;max-width:600px;margin:12px 0}.feature p{color:#506176;line-height:1.7;max-width:600px}.newsList{display:grid;gap:12px}.newsItem{background:#fff;border:1px solid var(--line);border-radius:24px;padding:25px;transition:.35s}.newsItem:hover{transform:translateX(7px)}.newsItem small{color:#7a8a9b;font-family:Inter}.newsItem strong{display:block;font-size:20px;margin:8px 0}.newsItem span{color:var(--muted);line-height:1.6}
+.gallery{display:grid;grid-template-columns:1.1fr .9fr .9fr;grid-template-rows:220px 220px;gap:12px}.photo{border-radius:25px;overflow:hidden;position:relative;background:linear-gradient(145deg,#b9e9ff,#0b5d9e);display:flex;align-items:end;padding:22px;color:#fff}.photo:nth-child(1){grid-row:1/3;background:linear-gradient(145deg,#8bdcff,#003b73)}.photo:nth-child(2){background:linear-gradient(145deg,#d9f5ff,#2686c9)}.photo:nth-child(3){background:linear-gradient(145deg,#edf9ff,#4b91c0)}.photo:nth-child(4){background:linear-gradient(145deg,#c3e9ff,#14578c)}.photo:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 20%,#fff8,transparent 20%),linear-gradient(transparent 50%,#001d3d99)}.photo span{position:relative;font-weight:700}
+.cta{padding:55px;border-radius:38px;background:linear-gradient(135deg,#003b73,#0789d5);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:30px;overflow:hidden}.cta h2{font:800 clamp(38px,5vw,64px)/.98 Inter;margin:0;letter-spacing:-.05em}.cta p{color:#d3e8f7;line-height:1.7}.cta .btn{background:#fff;color:var(--blue)}
+footer{background:#031d38;color:#b6c9da;padding:45px 5vw}.footer{max-width:var(--max);margin:auto;display:flex;justify-content:space-between;gap:30px}.footer b{color:#fff}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .85s ease,transform .85s cubic-bezier(.2,.8,.2,1)}.reveal.show{opacity:1;transform:none}
+@media(max-width:850px){.navlinks{display:none}.menu{display:block}.heroGrid{grid-template-columns:1fr}.visual{height:450px}.mainCard{left:25px;top:45px;width:72%;height:330px;padding:25px}.mainCard h2{font-size:54px}.smallCard{right:18px;bottom:25px}.cards{grid-template-columns:1fr}.numbers{grid-template-columns:1fr 1fr}.head{display:block}.newsGrid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}.photo:nth-child(1){grid-row:auto}.cta{display:block;padding:38px 27px}.footer{display:block}}
+</style>
+</head>
+<body>
+<nav class="nav">
+<a class="logo" href="#"><span class="logoMark">MC</span><span>MarCom TSU</span></a>
+<div class="navlinks"><a href="#about">รู้จัก MarCom</a><a href="#learn">เรียนอะไร</a><a href="#life">ชีวิตนิสิต</a><a href="#news">ข่าวสาร</a><a href="#contact">ติดต่อ</a></div>
+<button class="menu" onclick="document.querySelector('.navlinks').style.display=document.querySelector('.navlinks').style.display==='flex'?'none':'flex'">☰</button>
+</nav>
+
+<header class="hero">
+<div class="wrap heroGrid">
+<div class="reveal"><span class="pill">มหาวิทยาลัยทักษิณ · วิทยาเขตสงขลา</span>
+<h1>สื่อสารให้เป็น<br><span class="grad">สร้างให้เกิด</span></h1>
+<p>MarCom TSU — วิชาเอกสื่อสารการตลาด ที่เปลี่ยนความคิดสร้างสรรค์ให้เป็นการสื่อสารที่มีความหมาย เรียนรู้ทั้งกลยุทธ์ คอนเทนต์ แคมเปญ และการลงมือทำจริง</p>
+<div class="buttons"><a class="btn primary" href="#about">ทำความรู้จัก MarCom ↓</a><a class="btn light" href="#news">ข่าวสารล่าสุด</a></div></div>
+<div class="visual reveal"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><i class="spark s1"></i><i class="spark s2"></i>
+<div class="floatCard mainCard"><div class="mini">MARKETING COMMUNICATION</div><h2>MAR<br>COM</h2><div class="bottom">THAKSIN UNIVERSITY<br>SONGKHLA CAMPUS</div></div>
+<div class="floatCard smallCard">คิด · สร้าง · สื่อสาร</div></div>
+</div></header>
+
+<section id="about"><div class="wrap"><div class="head reveal"><div><div class="eyebrow">About MarCom</div><h2>ไม่ใช่แค่เรียน<br>แต่ได้ลงมือทำ</h2></div><p>เว็บไซต์นี้โฟกัสเฉพาะ <b>วิชาเอกสื่อสารการตลาด</b> ภายใต้หลักสูตรนิเทศศาสตรบัณฑิต การสื่อสารการตลาดและสื่อดิจิทัล ของมหาวิทยาลัยทักษิณ</p></div>
+<div class="cards"><div class="card reveal"><div class="num">01 · CREATIVE</div><h3>คิดให้แตกต่าง</h3><p>ฝึกคิด วิเคราะห์กลุ่มเป้าหมาย และเปลี่ยนโจทย์การตลาดให้กลายเป็นไอเดียการสื่อสาร</p></div><div class="card reveal"><div class="num">02 · STRATEGY</div><h3>วางแผนให้เป็น</h3><p>เรียนรู้การวางกลยุทธ์และออกแบบการสื่อสารให้ตอบโจทย์แบรนด์ ผู้คน และบริบทจริง</p></div><div class="card reveal"><div class="num">03 · MAKING</div><h3>ทำให้เกิดขึ้นจริง</h3><p>ผลิตงานจริง ตั้งแต่คอนเทนต์ แคมเปญ Live Commerce ไปจนถึงกิจกรรมและอีเวนต์</p></div></div></div></section>
+
+<section id="learn" class="blue"><div class="wrap"><div class="head reveal"><div><div class="eyebrow">Learning Journey</div><h2>จากไอเดีย<br>สู่ผลงานจริง</h2></div><p>เส้นทางการเรียนรู้ของ MarCom คือการผสมระหว่างความคิดสร้างสรรค์ การสื่อสาร และการลงมือทำ</p></div>
+<div class="numbers"><div class="numBox reveal"><b>01</b><span>คิดและวิเคราะห์</span></div><div class="numBox reveal"><b>02</b><span>วางแผนกลยุทธ์</span></div><div class="numBox reveal"><b>03</b><span>สร้างสรรค์คอนเทนต์</span></div><div class="numBox reveal"><b>04</b><span>ลงมือทำและสื่อสาร</span></div></div></div></section>
+
+<section id="life"><div class="wrap"><div class="head reveal"><div><div class="eyebrow">MarCom Life</div><h2>ชีวิตในรั้ว<br>MarCom TSU</h2></div><p>เพราะการเรียนรู้ไม่ได้อยู่แค่ในห้องเรียน กิจกรรมและประสบการณ์จริงคือส่วนหนึ่งของชีวิตนิสิต</p></div>
+<div class="cards"><div class="card reveal"><div class="num">STUDENT LIFE</div><h3>🎓 ชีวิตนิสิต</h3><p>กิจกรรมปฐมนิเทศ กิจกรรมพี่–น้อง และ community ที่สร้างความสัมพันธ์ระหว่างนิสิต</p></div><div class="card reveal"><div class="num">EVENT</div><h3>🎪 งานจริง</h3><p>ประสบการณ์จากการทำงานกิจกรรม อีเวนต์ และแคมเปญ เช่น Y2K Fashion Fest 2026</p></div><div class="card reveal"><div class="num">INDUSTRY</div><h3>🤝 เจอโลกจริง</h3><p>เรียนรู้จากการฝึกงาน สหกิจ การศึกษาดูงาน และการทำงานร่วมกับองค์กรภายนอก</p></div></div></div></section>
+
+<section id="news" class="newsArea"><div class="wrap"><div class="head reveal"><div><div class="eyebrow">News & Activities</div><h2>ข่าวสาร<br>และผลงาน</h2></div><p>ตัวอย่างข่าวและกิจกรรมที่สื่อสารผ่านช่องทางของนิเทศศาสตร์/MarCom TSU จากข้อมูลที่ค้นพบก่อนหน้า</p></div>
+<div class="newsGrid"><article class="feature reveal"><div class="date">27 MAY 2025 · STUDENT PROJECT</div><h3>MarCom × PANAE CRAFT</h3><p>นิสิตลงมือทำ Live Commerce ให้กับวิสาหกิจชุมชนเตยปาหนัน ตรัง เป็นตัวอย่างของการเรียนรู้จากโจทย์จริงและการนำทักษะการสื่อสารการตลาดไปใช้</p></article>
+<div class="newsList"><article class="newsItem reveal"><small>26 MAY 2025</small><strong>Community สำหรับนิสิตใหม่</strong><span>ประชาสัมพันธ์ช่องทาง LINE และ MarCom TSU สำหรับนิสิตที่ยืนยันสิทธิ์</span></article>
+<article class="newsItem reveal"><small>30 MAY 2025</small><strong>ละครเวที “ความรักที่จมหาย”</strong><span>ผลงานสร้างสรรค์ของนิสิตเอกสื่อสารการตลาด</span></article>
+<article class="newsItem reveal"><small>JUL 2026</small><strong>Y2K Fashion Fest 2026</strong><span>Diana Complex Hatyai × MarCom TSU กับกิจกรรมแฟชั่นและการประกวด</span></article>
+<article class="newsItem reveal"><small>AUG 2026</small><strong>ศึกษาดูงานองค์กรสื่อ</strong><span>ประสบการณ์ศึกษาดูงานและสร้างความร่วมมือกับองค์กรในสายงานสื่อ</span></article></div></div></div></section>
+
+<section><div class="wrap"><div class="head reveal"><div><div class="eyebrow">Gallery</div><h2>เรื่องราว<br>ที่เกิดขึ้นจริง</h2></div><p>พื้นที่สำหรับภาพกิจกรรม ผลงานนิสิต และโมเมนต์จากชีวิต MarCom — สามารถเปลี่ยนเป็นรูปจริงของสาขาได้ภายหลัง</p></div>
+<div class="gallery"><div class="photo reveal"><span>MARCOM · REAL EXPERIENCE</span></div><div class="photo reveal"><span>EVENT & CAMPAIGN</span></div><div class="photo reveal"><span>STUDENT LIFE</span></div><div class="photo reveal"><span>CREATIVE WORK</span></div></div></div></section>
+
+<section id="contact"><div class="wrap"><div class="cta reveal"><div><div class="eyebrow" style="color:#b9e8ff">MARCOM TSU</div><h2>มาเป็นส่วนหนึ่ง<br>ของเรื่องราว</h2><p>คณะมนุษยศาสตร์และสังคมศาสตร์ มหาวิทยาลัยทักษิณ วิทยาเขตสงขลา<br>140 หมู่ 4 ตำบลเขารูปช้าง จังหวัดสงขลา 90000</p></div><a class="btn" href="https://misreg.tsu.ac.th/" target="_blank">ข้อมูลมหาวิทยาลัย ↗</a></div></div></section>
+
+<footer><div class="footer"><div><b>MarCom TSU</b><br>Marketing Communication · Thaksin University</div><div>เว็บไซต์ต้นแบบสำหรับ <b>วิชาเอกสื่อสารการตลาด</b><br>สามารถแทนที่ภาพ โลโก้ และข่าวด้วยข้อมูลจริงของสาขาได้</div></div></footer>
+<script>
+const io=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+</script>
+<script type="module" src="/main.js"></script>
+</body></html>
